@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="JQ.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    
+
+    <body>
+        <div class="container">
+            <nav style="color:#7c848c;" class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img class="company-logo" src="https://review42.com/wp-content/uploads/2021/08/fyle-logo.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#what-we-do">What we do ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#why-choose-us">Why Choose us ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-project">Our Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experts-growth">Expert Growths</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#client-feedback">Client Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="home" class="row m-3">
+                <div class="col-12 order-md-1 order-2 col-md-5 text-center d-flex flex-column justify-content-center">
+                    <h1 class="text-left mt-4 awardWinningHeading">Award Winning</h1>
+                    <h1 class="text-left mt-5 digiMarketingHeading">
+                        DIGITAL <br /> MARKETING <br /> AGENCY
+                    </h1>
+                    <p class="mt-4">
+                        Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum
+                    </p>
+                    <div id="overlay2"></div>
+    
+                    <div id="popup-form" class="popup">
+                        <div class="popup-header d-flex flex-horizontal">
+                            <h2>Talk to Us</h2>
+                            <button class="close-btn">X</button>
+                        </div>
+                        <form id="contact-form" action="https://getform.io/f/bolglova" method="POST">
+                            <div class="form-group d-flex flex-column justify-content-center">
+                                <label for="workemail" class="floating-label text-left" style="color:#656a7b;">Work Email *</label>
+                                <input type="email" id="workemail" name="workemail" class="line-input">
+                            </div>
+                            <div class="form-group d-flex flex-horizontal">
+                                <div class="half d-flex flex-column">
+                                    <label for="fname" class="floating-label text-left" style="color:#656a7b;">First Name</label>
+                                    <input type="text" id="fname" name="fname" class="line-input">
+                                </div>
+                                <div class="half d-flex flex-column">
+                                    <label for="lname" class="floating-label text-left" style="color:#656a7b;">Last Name</label>
+                                    <input type="text" id="lname" name="lname" class="line-input">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" id="agree" name="agree" style="color:#656a7b;">
+                                    I agree to Fyle's terms and conditions, and provide consent to send me communication.
+                                </label>
+                            </div>
+                            <div id="agree-error"></div>
+                            <button type="submit" value="Submit" class="submit-btn">Contact Us</button>
+                        </form>
+                    </div>
+    
+                    <button class="btn contact-us">Contact Us</button>
+    
+                </div>
+                <div class="col-12 col-md-5 order-md-2 order-1 ml-auto">
+                    <img src="https://digitalsparkagency.netlify.app/Assets/images/hero.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div id="what-we-do" class="row mt-5">
+                <div class="col-5 ml-auto text-center d-flex flex-column justify-content-center">
+                    <h1 class="awardWinningHeading text-left"> What we do </h1>
+                    <h1 class="digiMarketingHeading text-left">SERVICES PROVIDE FOR YOU </h1>
+                </div>
+                <div class="col-5 col-5 ml-auto text-center">
+                    <p>
+                        Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum
+                    </p>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376780/1_qaxcs9.png" alt="Image 1">
+                        <div class="overlay">
+                            <div class="text-center">
+                                <img style="height:50px; width:50px;" class="m-auto text-center web-icon" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720701236/icon_l9twh9.png" />
+                                <h1 class="web-d-heading">Web Development</h1>
+                                <p class="web-d-info p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, quod impedit?</p>
+                                <div class="d-flex flex-horizontal justify-content-center text-center view-more-container">
+                                    <a class="view-more-con m-auto d-flex flex-horizontal text-center" href="https://fylehq.com/">View more<span>
+                                            <img style="height:15px; width:15px;" class="arrow-img mt-2 ml-2" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720703482/arrow_kxlyb8.png" />
+                                        </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/2_du9r0v.png" alt="Image 2">
+                        <div class="overlay">
+                            <div class="text-center">
+                                <img style="height:50px; width:50px;" class="m-auto text-center web-icon" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720701236/icon_l9twh9.png" />
+                                <h1 class="web-d-heading">Web Development</h1>
+                                <p class="web-d-info p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, quod impedit?</p>
+                                <div class="d-flex flex-horizontal justify-content-center text-center view-more-container">
+                                    <a class="view-more-con m-auto d-flex flex-horizontal text-center" href="https://fylehq.com/">View more<span>
+                                            <img style="height:15px; width:15px;" class="arrow-img mt-2 ml-2" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720703482/arrow_kxlyb8.png" />
+                                        </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"><img src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/3_xobr0b.png" alt="Image 3">
+                        <div class="overlay">
+                            <div class="text-center">
+                                <img style="height:50px; width:50px;" class="m-auto text-center web-icon" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720701236/icon_l9twh9.png" />
+                                <h1 class="web-d-heading">Web Development</h1>
+                                <p class="web-d-info p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, quod impedit?</p>
+                                <div class="d-flex flex-horizontal justify-content-center text-center view-more-container">
+                                    <a class="view-more-con m-auto d-flex flex-horizontal text-center" href="https://fylehq.com/">View more<span>
+                                            <img style="height:15px; width:15px;" class="arrow-img mt-2 ml-2" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720703482/arrow_kxlyb8.png" />
+                                        </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"><img src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376780/1_qaxcs9.png" alt="Image 4">
+                        <div class="overlay">
+                            <div class="text-center">
+                                <img style="height:50px; width:50px;" class="m-auto text-center web-icon" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720701236/icon_l9twh9.png" />
+                                <h1 class="web-d-heading">Web Development</h1>
+                                <p class="web-d-info p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, quod impedit?</p>
+                                <div class="d-flex flex-horizontal justify-content-center text-center view-more-container">
+                                    <a class="view-more-con m-auto d-flex flex-horizontal text-center" href="https://fylehq.com/">View more<span>
+                                            <img style="height:15px; width:15px;" class="arrow-img mt-2 ml-2" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720703482/arrow_kxlyb8.png" />
+                                        </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"><img src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/2_du9r0v.png" alt="Image 5">
+                        <div class="overlay">
+                            <div class="text-center">
+                                <img style="height:50px; width:50px;" class="m-auto text-center web-icon" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720701236/icon_l9twh9.png" />
+                                <h1 class="web-d-heading">Web Development</h1>
+                                <p class="web-d-info p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, quod impedit?</p>
+                                <div class="d-flex flex-horizontal justify-content-center text-center view-more-container">
+                                    <a class="view-more-con m-auto d-flex flex-horizontal text-center" href="https://fylehq.com/">View more<span>
+                                            <img style="height:15px; width:15px;" class="arrow-img mt-2 ml-2" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720703482/arrow_kxlyb8.png" />
+                                        </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"><img src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/3_xobr0b.png" alt="Image 6">
+                        <div class="overlay">
+                            <div class="text-center">
+                                <img style="height:50px; width:50px;" class="m-auto text-center web-icon" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720701236/icon_l9twh9.png" />
+                                <h1 class="web-d-heading">Web Development</h1>
+                                <p class="web-d-info p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, quod impedit?</p>
+                                <div class="d-flex flex-horizontal justify-content-center text-center view-more-container">
+                                    <a class="view-more-con m-auto d-flex flex-horizontal text-center" href="https://fylehq.com/">View more<span>
+                                            <img style="height:15px; width:15px;" class="arrow-img mt-2 ml-2" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720703482/arrow_kxlyb8.png" />
+                                        </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"><img src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376780/1_qaxcs9.png" alt="Image 7">
+    
+                        <div class="overlay">
+                            <div class="text-center">
+                                <img style="height:50px; width:50px;" class="m-auto text-center web-icon" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720701236/icon_l9twh9.png" />
+                                <h1 class="web-d-heading">Web Development</h1>
+                                <p class="web-d-info p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, quod impedit?</p>
+                                <div class="d-flex flex-horizontal justify-content-center text-center view-more-container">
+                                    <a class="view-more-con m-auto d-flex flex-horizontal text-center" href="https://fylehq.com/">View more<span>
+                                            <img style="height:15px; width:15px;" class="arrow-img mt-2 ml-2" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720703482/arrow_kxlyb8.png" />
+                                        </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/2_du9r0v.png" alt="Image 8">
+                        <div class="overlay">
+                            <div class="text-center">
+                                <img style="height:50px; width:50px;" class="m-auto text-center web-icon" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720701236/icon_l9twh9.png" />
+                                <h1 class="web-d-heading">Web Development</h1>
+                                <p class="web-d-info p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, quod impedit?</p>
+                                <div class="d-flex flex-horizontal justify-content-center text-center view-more-container">
+                                    <a class="view-more-con m-auto d-flex flex-horizontal text-center" href="https://fylehq.com/">View more<span>
+                                            <img style="height:15px; width:15px;" class="arrow-img mt-2 ml-2" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720703482/arrow_kxlyb8.png" />
+                                        </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/3_xobr0b.png" alt="Image 9">
+                        <div class="overlay">
+                            <div class="text-center">
+                                <img style="height:50px; width:50px;" class="m-auto text-center web-icon" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720701236/icon_l9twh9.png" />
+                                <h1 class="web-d-heading">Web Development</h1>
+                                <p class="web-d-info p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, quod impedit?</p>
+                                <div class="d-flex flex-horizontal justify-content-center text-center view-more-container">
+                                    <a class="view-more-con m-auto d-flex flex-horizontal text-center" href="https://fylehq.com/">View more<span>
+                                            <img style="height:15px; width:15px;" class="arrow-img mt-2 ml-2" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720703482/arrow_kxlyb8.png" />
+                                        </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="why-choose-us" class="row text-center mt-5">
+                <h1 class="col-12 awardWinningHeading">Why Choose Us ? </h1>
+                <h1 class="col-12 digiMarketingHeading">Why we are best</h1>
+                <div class="d-flex flex-horizontal justify-content-between mt-4">
+                    <div class="p-2 d-flex flex-column text-left ml-3">
+                        <img class="why-choose-us-images mb-2" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720708866/1_wsaqri.png" />
+                        <h1 class="why-choose-us-heading">Clarified Vision & Target</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, id alias!</p>
+                    </div>
+                    <div class="p-2 d-flex flex-column text-left ml-3">
+                        <img class="why-choose-us-images mb-2" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720709246/2_vejnex.png" />
+                        <h1 class="why-choose-us-heading">High Performance</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, id alias!</p>
+                    </div>
+                    <div class="p-2 d-flex flex-column text-left ml-3">
+                        <img class="why-choose-us-images mb-2" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720709322/3_xe2sja.png" />
+                        <h1 class="why-choose-us-heading">Maintain Security</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, id alias!</p>
+                    </div>
+                    <div class="p-2 d-flex flex-column text-left ml-3">
+                        <img class="why-choose-us-images mb-2" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720709355/4_myztrl.png" />
+                        <h1 class="why-choose-us-heading">Better Strategy & Quality</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, id alias!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="our-project" class="row text-center mt-5">
+                <h1 class="col-12 awardWinningHeading">
+                    Our Project
+                </h1>
+                <h1 class="col-12 digiMarketingHeading mb-4">
+                    WHY WE ARE BEST
+                </h1>
+                <div class="row d-flex flex-horizontal justify-content-between">
+                    <div id="bgProject" class="bg-project col-7 mr-2">
+    
+                    </div>
+                    <div id="locationImages" class="col-4 d-flex flex-column justify-content-center">
+                        <div class="item">
+                            <div id="item1" class="d-flex flex-column mb-2 justify-content-between place-layout">
+                                <h1 class="why-choose-us-heading mt-5">Genderless Kei - Japan's Hot</h1>
+                                <p class="mb-5">Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                            </div>
+                            <div class="overlay overlay1"></div>
+                        </div>
+    
+                        <div class="item">
+                            <div id="item2" class="d-flex flex-column mb-2 justify-content-center place-layout">
+                                <h1 class="why-choose-us-heading mt-5 m-2">Better Startegy & Quality</h1>
+                                <p class="mb-5 m-2">Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                            </div>
+                            <div class="overlay overlay2"></div>
+                        </div>
+    
+                        <div class="item" id="item3">
+                            <div class="d-flex flex-column mb-2 justify-content-center place-layout">
+                                <h1 class="why-choose-us-heading">Genderless Kei - Japan's Hot</h1>
+                                <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                            </div>
+                            <div class="overlay overlay3"></div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+            <div id="experts-growth" class="row container6 text-center">
+                <div class="experts col-12">EXPERTS GROWTH</div>
+                <div class="company col-12">OUR COMPANY GROWTH</div>
+                <div class="container7 col-12 d-flex flex-horizontal justify-content-between">
+                    <div class="box mr-3">
+                        <img src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720737102/heart_2_jwqy86.png" class="symb company-achievements-logo" alt="Heart">
+                        <p class="rating">199+</p>
+                        <p class="customer">Satisfied Customers</p>
+                    </div>
+                    <div class="box mr-3">
+                        <img src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720737215/clock_3_ao5fh5.png" class="symb company-achievements-logo" alt="Clock">
+                        <p class="rating">1591+</p>
+                        <p class="customer">Days Of Operation</p>
+                    </div>
+                    <div class="box mr-3">
+                        <img src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720737256/Path_4402_qwaqqh.png" class="symb company-achievements-logo" alt="Project">
+                        <p class="rating">283+</p>
+                        <p class="customer">Complete Projects</p>
+                    </div>
+                    <div class="box">
+                        <img src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720737284/Path_4406_obxawr.png" class="symb company-achievements-logo" alt="Awards">
+                        <p class="rating">75+</p>
+                        <p class="customer">Win Awards</p>
+                    </div>
+                </div>
+            </div>
+            <div id="client-feedback" class="row mt-5 d-flex">
+                <div class="col-12 client-feedback text-center">CLIENT'S FEEDBACK</div>
+                <div class="about-us mt-3 col-12">PEOPLE SAY'S ABOUT US !</div>
+                <div class="content-center col-12 ml-5 bg-image">
+                    <p class="text-center mt-3 quote">Jannat Trust Group has been instrumental in helping us achieve our goals. Their professionalism and expertise are unmatched.”</p>
+                </div>
+                <div class="col-12 mt-5 text-center">
+                  <span class="jan">JANNAT THUMPA</span>
+                  <span class="coo">- COO, AMERIMAR ENTERPRISES, INC.</span>
+                </div>
+                <div class="logos-container m-auto">
+                    <img class="company-logo-img" src="https://res.cloudinary.com/dqejpam9h/image/upload/v1720761404/Group_500_z9k8mi.png"/>
+                </div>
+            </div>
+    
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="JQ.js" type="text/javascript"></script>
+</html>
